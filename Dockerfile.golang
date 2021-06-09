@@ -1,4 +1,4 @@
-FROM golang:latest
+FROM golang:buster
 RUN wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | apt-key add - && \
     echo "deb http://mirrors.aliyun.com/mongodb/apt/debian buster/mongodb-org/4.2 main" > /etc/apt/sources.list.d/mongodb-org-4.2.list  && \
     apt-get update && apt-get install -y mongodb-org redis-server
