@@ -1,2 +1,2 @@
 FROM golang:buster
-RUN apt-get update && apt-get install -y nginx supervisord
+RUN apt-get update && apt-get install -y nginx supervisor
